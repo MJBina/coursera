@@ -1,9 +1,121 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Module-2 Solution</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Module-2 Solution</title>
+
+<style>
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+p {
+  margin: 5px white;
+  width: 97%;
+  font-family: Helvetica;
+  color: black;
+  background-color: gray;
+}
+
+
+#title1 {
+  text-align: center;
+  width: 100px;
+  border: 2px solid black;
+  float: right; 
+  background-color: #DEB887;
+}
+#title2 {
+  text-align: center;
+  width: 100px;
+  border: 2px solid black;
+  float: right; 
+  background-color: #5F9EA0;
+}
+#title3 {
+  text-align: center;
+  width: 100px;
+  border: 2px solid black;
+  float: right; 
+  background-color: #FF7F50;
+}
+
+
+
+/* Simple Responsive Framework. */
+
+/********** Desktop (large) devices	only **************/
+@media (min-width: 992px) {
+   .lg-3-columns {
+    float: left;
+    border: 1px solid black;
+  }
+  .lg-3-columns {
+    width: 33%;
+  }
+}
+
+/********** Tablet(medium) devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .md-2-columns, .md-one-column {
+    float: left;
+    border: 1px solid black;
+  }
+  .md-2-columns {
+    width: 50%;
+  }
+  .md-one-column {
+    width: 100%;
+  }
+} 
+ 
+ 
+/********** Mobile (small) devices only ***************/
+@media (max-width: 767px) {
+	.sm-one-column {
+    float: left;
+    border: 1px solid black;
+  }
+  .sm-one-column {
+    width: 100%;
+  }
+} 
+ 
+ 
+</style>
+
 </head>
+
+
+
 <body>
 	<h1>Module-2 Solution</h1>
+
+	<div class="lg-3-columns md-2-columns sm-one-column">
+  <p id="title1">Chicken</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id massa augue. Vivamus convallis euismod massa id volutpat. Quisque pellentesque lectus nisi, sit amet pharetra orci fermentum ut. Vestibulum faucibus at neque sit amet viverra. Vestibulum malesuada vel velit sit amet rutrum. Suspendisse sit amet facilisis eros. Suspendisse ut lobortis dolor. Donec ac ex vitae neque tristique sodales. Sed tellus enim, sagittis id tellus sit amet, suscipit interdum est. Duis pellentesque felis ut nunc condimentum, ac mollis turpis fringilla. Vestibulum posuere ligula quis pellentesque aliquam. Nulla ut felis pharetra, placerat risus at, faucibus nisl.</p>
+	</div>
+  
+	<div class="lg-3-columns md-2-columns sm-one-column">
+  <p id = "title2">Beef</p>
+	<p>Fusce non neque tellus. Suspendisse nec lorem porttitor justo finibus mattis. Vestibulum eu tellus non turpis porta consequat a ac justo. Nunc lacinia finibus lectus vel sollicitudin. Suspendisse potenti. Donec dignissim ornare lacus ac interdum. Vestibulum nibh sem, dictum vel accumsan sit amet, lobortis in elit. Suspendisse rutrum at sem in interdum. Integer aliquet ut nibh faucibus consectetur. Nullam pharetra dolor a nisl rutrum, eget gravida nisi lacinia. Integer luctus lectus neque.</p>
+	</div>
+  
+	<div class="lg-3-columns md-one-column sm-one-column">
+  <p id="title3">Sushi</p>
+	<p>Nullam aliquet ex rhoncus massa placerat dapibus. Nulla lectus nisi, sagittis in arcu id, feugiat malesuada massa. Nam id metus ac sapien ullamcorper iaculis. Pellentesque velit magna, tincidunt nec arcu vel, congue luctus nunc. Fusce suscipit blandit dolor eu eleifend. Praesent dapibus ipsum nunc, id pharetra metus scelerisque quis. Vestibulum vel libero purus. Fusce non sagittis eros, vitae egestas turpis. Aenean eu felis imperdiet, rhoncus elit in, consequat tortor. Ut condimentum neque quis odio elementum tempus.</p>
+	</div>
+ 
+
 </body>
 </html>
